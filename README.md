@@ -11,7 +11,7 @@ Get a voronoi diagram for a given collection of points.
 There's only one usefull function, `diagram`. It takes a collection of points and returns a map with :points, :edges, and :cells. Each point is a vector of two coordinates, each edges is a vector of two points, and each cell is a vector of at least three points.
 
     (ns example.core
-      (:require [trystan/voronoi-diagram.core :as voronoi]))
+      (:require [voronoi-diagram.core :as voronoi]))
 
     (let [points [[2 2] [1 4] [4 1] [-10 -10] [-10 10] [10 10] [10 -10]]
           {:keys [points edges cells]} (vornoi/diagram points)]
