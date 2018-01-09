@@ -14,7 +14,7 @@ There's only one usefull function, `diagram`. It takes a collection of points an
       (:require [voronoi-diagram.core :as voronoi]))
 
     (let [points [[2 2] [1 4] [4 1] [-10 -10] [-10 10] [10 10] [10 -10]]
-          {:keys [points edges cells]} (vornoi/diagram points)]
+          {:keys [points edges cells]} (voronoi/diagram points)]
       (println "point" (first points))
       (println "edge" (first edges))
       (println "cell" (first cells)))
